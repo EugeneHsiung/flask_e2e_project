@@ -1,0 +1,199 @@
+Year,Related,Underlying_cause,Race/ethnicity,Borough,Deaths
+2016,All,All,All,Bronx,5
+2016,All,All,All,Brooklyn,12
+2016,All,All,All,Manhattan,4
+2016,All,All,All,Queens,8
+2016,All,All,All,Staten Island,4
+2016,All,All,All,Rest of State,3
+2016,All,All,Asian/Pacific Islander,All,4
+2016,All,All,Black non-Latina,All,15
+2016,All,All,Latina,All,9
+2016,All,All,White non-Latina,All,8
+2016,Pregnancy-associated but not related,Mental Health Conditions (Overdose related to substance use disorder),All,All,6
+2016,Pregnancy-associated but not related,Cancer,All,All,5
+2016,Pregnancy-associated but not related,Cardiovascular Conditions,All,All,2
+2016,Pregnancy-associated but not related,Infection/Sepsis,All,All,2
+2016,Pregnancy-associated but not related,Unknown COD,All,All,1
+2016,Pregnancy-associated but not related,Other,All,All,1
+2016,Pregnancy-related,All,All,Bronx,1
+2016,Pregnancy-related,All,All,Brooklyn,5
+2016,Pregnancy-related,All,All,Manhattan,4
+2016,Pregnancy-related,All,All,Rest of State,0
+2016,Pregnancy-related,All,All,Queens,3
+2016,Pregnancy-related,All,All,Staten Island,2
+2016,Pregnancy-related,All,White non-Latina,All,1
+2016,Pregnancy-related,All,Latina,All,6
+2016,Pregnancy-related,All,Black non-Latina,All,6
+2016,Pregnancy-related,All,Asian/Pacific Islander,All,2
+2016,Pregnancy-related,Cardiovascular Conditions,All,All,7
+2016,Pregnancy-related,Hemorrhage,All,All,4
+2016,Pregnancy-related,Pregnancy-induced hypertension,All,All,2
+2016,Pregnancy-related,Asthma/ pulmonary conditions,All,All,1
+2016,Pregnancy-related,Embolism,All,All,1
+2016,Unable to Determine,Homicide,All,All,3
+2016,Unable to Determine,Unknown COD,All,All,1
+2017,All,All,All,Bronx,9
+2017,All,All,All,Brooklyn,15
+2017,All,All,All,Manhattan,5
+2017,All,All,All,Queens,13
+2017,All,All,All,Staten Island,8
+2017,All,All,All,Rest of State,5
+2017,All,All,Asian/Pacific Islander,All,5
+2017,All,All,Black non-Latina,All,21
+2017,All,All,Latina,All,16
+2017,All,All,Other,All,3
+2017,All,All,White non-Latina,All,10
+2017,Pregnancy-associated but not related,Cancer,All,All,10
+2017,Pregnancy-associated but not related,Mental Health Conditions (Overdose related to substance use disorder),All,All,5
+2017,Pregnancy-associated but not related,Asthma/ pulmonary conditions,All,All,4
+2017,Pregnancy-associated but not related,Embolism,All,All,2
+2017,Pregnancy-associated but not related,Homicide,All,All,1
+2017,Pregnancy-associated but not related,Infection/Sepsis,All,All,1
+2017,Pregnancy-associated but not related,Unknown COD,All,All,1
+2017,Pregnancy-associated but not related,Other,All,All,5
+2017,Pregnancy-related,All,All,Bronx,6
+2017,Pregnancy-related,All,All,Brooklyn,7
+2017,Pregnancy-related,All,All,Manhattan,4
+2017,Pregnancy-related,All,All,Staten Island,1
+2017,Pregnancy-related,All,All,Queens,0
+2017,Pregnancy-related,All,All,Rest of State,1
+2017,Pregnancy-related,All,White non-Latina,All,1
+2017,Pregnancy-related,All,Other,All,1
+2017,Pregnancy-related,All,Latina,All,6
+2017,Pregnancy-related,All,Black non-Latina,All,10
+2017,Pregnancy-related,All,Asian/Pacific Islander,All,1
+2017,Pregnancy-related,Embolism,All,All,5
+2017,Pregnancy-related,Cardiovascular Conditions,All,All,3
+2017,Pregnancy-related,Mental Health Conditions (Overdose related to substance use disorder),All,All,3
+2017,Pregnancy-related,Hemorrhage,All,All,2
+2017,Pregnancy-related,Infection/Sepsis,All,All,2
+2017,Pregnancy-related,Mental Health Conditions (Suicide),All,All,1
+2017,Pregnancy-related,Unknown COD,All,All,1
+2017,Pregnancy-related,Other,All,All,2
+2017,Unable to Determine,Homicide,All,All,3
+2017,Unable to Determine,Cardiovascular Conditions,All,All,1
+2017,Unable to Determine,Infection/Sepsis,All,All,1
+2017,Unable to Determine,Mental Health Conditions (Overdose related to substance use disorder),All,All,1
+2017,Unable to Determine,Other,All,All,1
+2018,All,All,All,Bronx,10
+2018,All,All,All,Brooklyn,14
+2018,All,All,All,Manhattan,3
+2018,All,All,All,Queens,8
+2018,All,All,All,Staten Island,2
+2018,All,All,All,Rest of State,5
+2018,All,All,Asian/Pacific Islander,All,5
+2018,All,All,Black non-Latina,All,20
+2018,All,All,Latina,All,7
+2018,All,All,White non-Latina,All,10
+2018,Pregnancy-associated but not related,Cardiovascular Conditions,All,All,3
+2018,Pregnancy-associated but not related,Unintentional Injury,All,All,3
+2018,Pregnancy-associated but not related,Cancer,All,All,2
+2018,Pregnancy-associated but not related,Asthma/ pulmonary conditions,All,All,1
+2018,Pregnancy-associated but not related,Infection/Sepsis,All,All,1
+2018,Pregnancy-associated but not related,Other,All,All,1
+2018,Pregnancy-related,All,All,Bronx,5
+2018,Pregnancy-related,All,All,Brooklyn,10
+2018,Pregnancy-related,All,All,Manhattan,1
+2018,Pregnancy-related,All,All,Queens,4
+2018,Pregnancy-related,All,All,Rest of State,3
+2018,Pregnancy-related,All,All,Staten Island,0
+2018,Pregnancy-related,All,White non-Latina,All,5
+2018,Pregnancy-related,All,Latina,All,2
+2018,Pregnancy-related,All,Black non-Latina,All,13
+2018,Pregnancy-related,All,Asian/Pacific Islander,All,3
+2018,Pregnancy-related,Hemorrhage,All,All,4
+2018,Pregnancy-related,Mental Health Conditions (Suicide),All,All,4
+2018,Pregnancy-related,Cardiovascular Conditions,All,All,3
+2018,Pregnancy-related,Embolism,All,All,3
+2018,Pregnancy-related,Cancer,All,All,2
+2018,Pregnancy-related,Infection/Sepsis,All,All,1
+2018,Pregnancy-related,Pregnancy-induced hypertension,All,All,1
+2018,Pregnancy-related,Unknown COD,All,All,2
+2018,Pregnancy-related,Other,All,All,3
+2018,Unable to Determine,Mental Health Conditions (Overdose related to substance use disorder),All,All,3
+2018,Unable to Determine,Cardiovascular Conditions,All,All,2
+2018,Unable to Determine,Hemorrhage,All,All,1
+2018,Unable to Determine,Mental Health Conditions (Suicide),All,All,1
+2018,Unable to Determine,Unknown COD,All,All,1
+2019,All,All,All,Bronx,12
+2019,All,All,All,Brooklyn,20
+2019,All,All,All,Manhattan,6
+2019,All,All,All,Queens,12
+2019,All,All,All,Staten Island,4
+2019,All,All,All,Rest of State,3
+2019,All,All,White non-Latina,All,11
+2019,All,All,Latina,All,20
+2019,All,All,Black non-Latina,All,26
+2019,Pregnancy-associated but not related,Cancer,All,All,4
+2019,Pregnancy-associated but not related,Asthma/ pulmonary conditions,All,All,3
+2019,Pregnancy-associated but not related,Homicide,All,All,2
+2019,Pregnancy-associated but not related,Infection/Sepsis,All,All,2
+2019,Pregnancy-associated but not related,Mental Health Conditions (Overdose related to substance use disorder),All,All,2
+2019,Pregnancy-associated but not related,Cardiovascular Conditions,All,All,1
+2019,Pregnancy-associated but not related,Other,All,All,5
+2019,Pregnancy-related,All,All,Bronx,7
+2019,Pregnancy-related,All,All,Brooklyn,9
+2019,Pregnancy-related,All,All,Manhattan,4
+2019,Pregnancy-related,All,All,Queens,6
+2019,Pregnancy-related,All,All,Staten Island,1
+2019,Pregnancy-related,All,All,Rest of State,1
+2019,Pregnancy-related,All,White non-Latina,All,6
+2019,Pregnancy-related,All,Latina,All,9
+2019,Pregnancy-related,All,Black non-Latina,All,13
+2019,Pregnancy-Related,Hemorrhage,All,All,5
+2019,Pregnancy-Related,Cardiovascular Conditions,All,All,4
+2019,Pregnancy-Related,Embolism,All,All,4
+2019,Pregnancy-Related,Mental Health Conditions (Suicide),All,All,3
+2019,Pregnancy-Related,Cancer,All,All,2
+2019,Pregnancy-Related,Mental Health Conditions (Overdose related to substance use disorder),All,All,2
+2019,Pregnancy-Related,Asthma/ pulmonary conditions,All,All,1
+2019,Pregnancy-Related,Homicide,All,All,1
+2019,Pregnancy-Related,Infection/Sepsis,All,All,1
+2019,Pregnancy-Related,Unintentional Injury,All,All,1
+2019,Pregnancy-Related,Unknown COD,All,All,1
+2019,Pregnancy-Related,Other,All,All,3
+2019,Unable to Determine,Mental Health Conditions (Overdose related to substance use disorder),All,All,3
+2019,Unable to Determine,Asthma/ pulmonary conditions,All,All,1
+2019,Unable to Determine,Cardiovascular Conditions,All,All,1
+2019,Unable to Determine,Homicide,All,All,1
+2019,Unable to Determine,Unintentional Injury,All,All,1
+2019,Unable to Determine,Unknown COD,All,All,2
+2019,Unable to Determine,Other,All,All,1
+2020,All,All,All,Bronx,16
+2020,All,All,All,Brooklyn,14
+2020,All,All,All,Manhattan,3
+2020,All,All,All,Queens,11
+2020,All,All,All,Staten Island,2
+2020,All,All,All,Rest of State,5
+2020,All,All,White non-Latina,All,8
+2020,All,All,Latina,All,13
+2020,All,All,Black non-Latina,All,23
+2020,All,All,Asian/Pacific Islander,All,6
+2020,All,All,Other,All,1
+2020,Pregnancy-associated but not related,Mental Health Conditions (Overdose related to substance use disorder),All,All,3
+2020,Pregnancy-associated but not related,Infection/Sepsis,All,All,3
+2020,Pregnancy-associated but not related,Asthma/ pulmonary conditions,All,All,2
+2020,Pregnancy-associated but not related,Cancer,All,All,2
+2020,Pregnancy-associated but not related,Homicide,All,All,2
+2020,Pregnancy-related,All,All,Bronx,9
+2020,Pregnancy-related,All,All,Brooklyn,8
+2020,Pregnancy-related,All,All,Manhattan,1
+2020,Pregnancy-related,All,All,Queens,8
+2020,Pregnancy-related,All,All,Rest of State,3
+2020,Pregnancy-related,All,White non-Latina,All,4
+2020,Pregnancy-related,All,Latina,All,9
+2020,Pregnancy-related,All,Black non-Latina,All,12
+2020,Pregnancy-related,All,Asian/Pacific Islander,All,4
+2020,Pregnancy-Related,Hemorrhage,All,All,6
+2020,Pregnancy-Related,Infection/Sepsis,All,All,6
+2020,Pregnancy-Related,Mental Health Conditions (Overdose related to substance use disorder),All,All,4
+2020,Pregnancy-Related,Embolism,All,All,3
+2020,Pregnancy-Related,Cardiovascular Conditions,All,All,2
+2020,Pregnancy-Related,Mental Health Conditions (Suicide),All,All,1
+2020,Pregnancy-Related,Other,All,All,7
+2020,Unable to Determine,Cardiovascular Conditions,All,All,2
+2020,Unable to Determine,Homicide,All,All,2
+2020,Unable to Determine,Mental Health Conditions (Overdose related to substance use disorder),All,All,2
+2020,Unable to Determine,Mental Health Conditions (Suicide),All,All,1
+2020,Unable to Determine,Unintentional Injury,All,All,1
+2020,Unable to Determine,Unknown COD,All,All,2
