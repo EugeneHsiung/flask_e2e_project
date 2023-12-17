@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Azure Deployment Example with Video</title>
+    
+    <!-- Tailwind CSS via CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+
+<body class="bg-gray-200">
+
+    <header class="bg-blue-600 text-white p-4">
+        <h1 class="text-2xl">Pregnancy Associated Mortality</h1>
+        <nav>
+            <ul class="flex space-x-4">
+                <li><a href="/" class="hover:underline">Home</a></li>
+                <li><a href="/about" class="hover:underline">About</a></li>
+                <li><a href="/data" class="hover:underline">Data</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="p-4">
+
+        {% block content %}        
+            <p>This is an Azure Deployment Flask App with data from Data.gov about Pregnancy-Associated Mortality</p>
+            </br> 
+            <p>This app contains a home page, about page, and data page</p>
+        {% endblock %}
+
+    </main>
+    <footer class="bg-blue-600 text-white p-4 mt-6">
+        <p>© 2023 Pregnancy-Associated Mortality Website. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>

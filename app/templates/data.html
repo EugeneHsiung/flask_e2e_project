@@ -1,0 +1,47 @@
+{% extends "home.html" %}
+
+{% block content %}
+<section class="mb-6">
+    <div>
+        <h2 class="text-xl mb-2">Data</h2>
+        <p>
+            There are a total of 199 data points for Pregnancy Associated Mortality. Below you will find a dataset sample of 50.   
+        </p>
+        <p>
+            Below you will find Columns of: Year, Related, Underlying cause, Race/ethnicty, Borough, and Deaths. If 
+        </p>
+    </div>
+</section>
+
+<table style="border-collapse: collapse; width: 100%;">
+    <thead>
+        <tr style="border: 1px solid #000000;">
+            <th class="px-4 py-2">Year</th>
+            <th class="px-4 py-2">Related</th>
+            <th class="px-4 py-2">Underlying Cause</th>
+            <th class="px-4 py-2">Race/ethnicity</th>
+            <th class="px-4 py-2">Borough</th>
+            <th class="px-4 py-2">Deaths</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for data in data.values %}
+        <tr style="border: 1px solid #000000;">
+            <th class="px-4 py-2">{{ data[0] }}</td>
+            <th class="px-4 py-2">{{ data[1] }}</td>
+            <th class="px-4 py-2">{{ data[2] }}</td>
+            <th class="px-4 py-2">{{ data[3] }}</td>
+            <th class="px-4 py-2">{{ data[4] }}</td>
+            <th class="px-4 py-2">{{ data[5] }}</td>
+            <th class="px-4 py-2">{{ data[6] }}</td>
+            <th class="px-4 py-2">{{ data[7] }}</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+</div>
+</section>
+
+<br/>
+
+{% endblock %}
