@@ -11,6 +11,9 @@ import csv
 from flask import Flask, url_for
 from flask import Flask
 from db_functions import update_or_create_user
+from flask import Flask, jsonify
+
+
 
 
 
@@ -75,6 +78,28 @@ def data():
     df = pd.read_csv('/home/eugenehsiung/flask_e2e_project/data/Clean-Pregnancy-Associated_Mortality.csv').sample(50)
     return render_template('data.html', data=df)
 
+# GET and POST
+@app.route('/hello', methods=['GET'])
+def hello_get():
+    name = request.args.get('name', 'World')
+    lastname = request.args.get('lastname', 'no last name provided')
+    nameCapital = name.upper()  # Convert names to uppercase
+    lastnameCapital = lastname.upper()  # Convert names to uppercase
+    return f'Hello {nameCapital} {lastnameCapital}, <br> Welcome to my pregnancy associated mortality web app!'
+
+# /hello?name=John&lastname=Smith (example)
+
+@app.route('/hello', methods=['POST'])
+def hello_post():
+    data = request.get_json()
+    if data is None:
+        return jsonify({'error': 'Invalid JSON'}), 400
+    
+    name = data.get('name', 'World')
+    return jsonify({'message': f'Hello {name}!'})
+
+if __name__ == '__main__':
+    app.run(debug=True)
 
 # Google OAuth
 @app.route('/google/')

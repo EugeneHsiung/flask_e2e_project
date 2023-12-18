@@ -3,6 +3,10 @@ pandas
 numpy
 authlib 
 requests
-
+SQLalchemy
+python-dotenv
+sentry-sdk
+flask-sqlalchemy
+gunicorn
 
 # pip install -r requirements.txt
