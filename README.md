@@ -11,6 +11,7 @@ This repository is the final project submission for HHA 504. Within this repo, y
 
 
 ## .env File Template
+<img width="710" alt="env" src="https://github.com/EugeneHsiung/flask_e2e_project/assets/141866888/e003dd71-6b17-4d11-8bcf-683e430bc4a5">
 
 
 
