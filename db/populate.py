@@ -30,5 +30,7 @@ df.to_sql('pregnancy', con=engine, if_exists='replace', index=False) # Insert da
 # create table pregnancy (current_year int, related varchar(200), Underlying_cause varchar(200), race_ethnicity varchar(200), Borough varchar(200), Deaths int);
 # select * from pregnancy
 
-# If success print "SQL Database success"
-print("SQL Database success")
+
+
+
+# resource: https://saturncloud.io/blog/writing-a-pandas-dataframe-to-mysql/ 
