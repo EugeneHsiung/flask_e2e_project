@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dashboard</title>
+        <!-- Tailwind CSS via CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles.css') }}">
+</head>
+
+<body>
+    <h1> Dashboard</h1>
+    <h3> Welcome {{ user.name }} </h3>
+    <h2> User Details</h2>
+    <div>
+        <p> Name: {{ user.name }} </p>
+        <p> Email: {{ user.email }} </p>
+        <p> Profile Picture: <img src="{{ user.picture }}" alt="Profile Picture" style="width:50px;height:50px;"> </p>
+    </div>
+    <div>
+        <a href="/logout" class="logout-btn" style="text-decoration:none;">
+            <div class="btn-text">
+                Logout
+            </div>
+        </a>
+    </div>
+
+    <footer class="bg-blue-600 text-white p-4 mt-6">
+        <p>© 2023 Pregnancy-Associated Mortality Website. All Rights Reserved.</p>
+    </footer>
+
+</body>
+
+</html>
