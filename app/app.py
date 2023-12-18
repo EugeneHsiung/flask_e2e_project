@@ -32,37 +32,34 @@ from db_functions import update_or_create_user
 
 app = Flask(__name__)
 
-#DB_HOST = os.getenv("DB_HOST")
-#DB_DATABASE = os.getenv("DB_DATABASE")
-#DB_USERNAME = os.getenv("DB_USERNAME")
-#DB_PASSWORD = os.getenv("DB_PASSWORD")
-#DB_NAME = os.getenv("DB_NAME")
-#DB_PORT = int(os.getenv("DB_PORT", "3306"))
-#DB_CHARSET = os.getenv("DB_CHARSET", "utf8mb4")
+DB_HOST = os.getenv("DB_HOST")
+DB_DATABASE = os.getenv("DB_DATABASE")
+DB_USERNAME = os.getenv("DB_USERNAME")
+DB_PASSWORD = os.getenv("DB_PASSWORD")
+DB_NAME = os.getenv("DB_NAME")
+
 
 load_dotenv()  # Load environment variables from .env file
 
 # Connection string
-#connect_args={'ssl':{'fake_flag_to_enable_tls': True}}
+connect_args={'ssl':{'fake_flag_to_enable_tls': True}}
 
-#connection_string = (f'mysql+pymysql://{DB_USERNAME}:{DB_PASSWORD}@{DB_HOST}:{DB_PORT}/{DB_DATABASE}'
-#                    f"?charset={DB_CHARSET}")
+conn_string = (
+    f"mysql+pymysql://{DB_USERNAME}:{DB_PASSWORD}@{DB_HOST}/{DB_DATABASE}")
 
-#engine = create_engine(
-#        connection_string,
-#        connect_args=connect_args,
+engine = create_engine(
+        connection_string,
+        connect_args=connect_args,
 
-#)
+)
 
 ## Connection settings for the Goolge OAuth
-GOOGLE_CLIENT_ID = os.getenv('GOOGLE_CLIENT_ID')
-GOOGLE_CLIENT_SECRET = os.getenv('GOOGLE_CLIENT_SECRET')
+GOOGLE_CLIENT_ID = '736457988361-bqsfd7kko0kfcn4qvbjqajmgr1ccbj0u.apps.googleusercontent.com'
+GOOGLE_CLIENT_SECRET = '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'
 
 app = Flask(__name__)
 app.secret_key = os.urandom(12)
 oauth = OAuth(app)
-
-app = Flask(__name__)
 
 @app.route('/')
 def mainpage():
@@ -81,7 +78,7 @@ def data():
     return render_template('data.html', data=df)
 
 
-# OAUTH
+# Google OAuth
 @app.route('/google/')
 def google():
     CONF_URL = 'https://accounts.google.com/.well-known/openid-configuration'
@@ -103,7 +100,7 @@ def google():
     session['nonce'] = generate_token()
     ##, note: if running in google shell, need to override redirect_uri 
     ## to the external web address of the shell, e.g.,
-    redirect_uri = 'https://5000-cs-1039191608401-default.cs-us-east1-vpcf.cloudshell.dev/google/auth/'
+    redirect_uri = 'https://5000-cs-340668953872-default.cs-us-east1-pkhd.cloudshell.dev/google/auth/'
     return oauth.google.authorize_redirect(redirect_uri, nonce=session['nonce'])
 
 @app.route('/google/auth/')
@@ -127,7 +124,6 @@ def dashboard():
 def logout():
     session.pop('user', None)
     return redirect('/')
-
 
 
 if __name__ == '__main__':

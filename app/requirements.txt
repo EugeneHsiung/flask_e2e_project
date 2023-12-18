@@ -3,3 +3,6 @@ pandas
 numpy
 authlib 
 requests
+
+
+# pip install -r requirements.txt
