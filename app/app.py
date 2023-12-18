@@ -47,15 +47,13 @@ connect_args={'ssl':{'fake_flag_to_enable_tls': True}}
 conn_string = (
     f"mysql+pymysql://{DB_USERNAME}:{DB_PASSWORD}@{DB_HOST}/{DB_DATABASE}")
 
-engine = create_engine(
-        connection_string,
-        connect_args=connect_args,
+# Database connection settings
+db_engine = create_engine(conn_string, pool_pre_ping=True)
 
-)
 
 ## Connection settings for the Goolge OAuth
-GOOGLE_CLIENT_ID = '736457988361-bqsfd7kko0kfcn4qvbjqajmgr1ccbj0u.apps.googleusercontent.com'
-GOOGLE_CLIENT_SECRET = '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'
+GOOGLE_CLIENT_ID = os.getenv('GOOGLE_CLIENT_ID')
+GOOGLE_CLIENT_SECRET = os.getenv('GOOGLE_CLIENT_SECRET')
 
 app = Flask(__name__)
 app.secret_key = os.urandom(12)
