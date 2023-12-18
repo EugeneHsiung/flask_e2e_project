@@ -12,25 +12,20 @@ from flask import Flask, url_for
 from flask import Flask
 from db_functions import update_or_create_user
 from flask import Flask, jsonify
+import sentry_sdk
 
 
-
-
-
-#import sentry_sdk
-#from db_functions import update_or_create_user
-
-
-#sentry_sdk.init(
-    #dsn=,
+sentry_sdk.init(
+    dsn="https://bfba2f0050f39f16282167b9f13e900e@o4506415981002752.ingest.sentry.io/4506416042803200",
     # Set traces_sample_rate to 1.0 to capture 100%
     # of transactions for performance monitoring.
-    #traces_sample_rate=1.0,
+    traces_sample_rate=1.0,
     # Set profiles_sample_rate to 1.0 to profile 100%
     # of sampled transactions.
     # We recommend adjusting this value in production.
-    #profiles_sample_rate=1.0,
-#)
+    profiles_sample_rate=1.0,
+)
+
 
 
 app = Flask(__name__)
