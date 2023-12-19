@@ -1,5 +1,5 @@
-# Use Python 3.7 image for the Docker image
-FROM python:3.7-alpine  
+# Use Python 3.10-slim-buster for the Docker image
+FROM python:3.10-slim-buster
 # application code placed in the working directory to /app
 WORKDIR /app
 # Copies content of current directory onto 'app' directory 
