@@ -28,3 +28,4 @@ df.to_sql('pregnancy', con=engine, if_exists='replace', index=False) # Insert da
 
 
 # resource: https://saturncloud.io/blog/writing-a-pandas-dataframe-to-mysql/ 
+# if use: Alembic follow guide: https://github.com/EugeneHsiung/cloud_db_mgmt_pooling_migrations/blob/main/azure/azurepopulate.py 
