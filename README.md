@@ -6,17 +6,17 @@ This repository is the final project submission for HHA 504. Within this repo, y
 Final Screenshots of what the web application service, Oauth, Dockerfile, Sentry, API example, Azure, MySQL database can be found in `docs` [folder](https://github.com/EugeneHsiung/flask_e2e_project/tree/main/docs) 
 
 ## Technologies Utilized
-Github (Version Control): Connected Google shell environment with Github
-Flask (Python; Frontend & Backend): Created an app to display data
-MySQL (Database via GCP or Azure): Data storage on MySQL Workbench
-SQLAlchemy (ORM): Product that uses a ORM
-.ENV (Environment Variables): tore all credentials 
-Tailwind (Frontend Styling): Used tailwind for styling
-Authorization (Google OAuth): Used Authorization
-API Service (Flask Backend): Created routes that lead to JSON output
-Logger and or Sentry.io (Debugging & Logging): Used Sentry.io for performance monitoring
-Docker (Containerization): A product that is containerized 
-GCP or Azure (Deployment): Used Azure to deploy web app service
+- Github (Version Control): Connected Google shell environment with Github
+- Flask (Python; Frontend & Backend): Created an app to display data
+- MySQL (Database via GCP or Azure): Data storage on MySQL Workbench
+- SQLAlchemy (ORM): Product that uses a ORM
+- .ENV (Environment Variables): tore all credentials
+- Tailwind (Frontend Styling): Used tailwind for styling
+- Authorization (Google OAuth): Used Authorization
+- API Service (Flask Backend): Created routes that lead to JSON output
+- Logger and or Sentry.io (Debugging & Logging): Used Sentry.io for performance monitoring
+- Docker (Containerization): A product that is containerized
+- GCP or Azure (Deployment): Used Azure to deploy web app service
 
 ## Running the Web Service
 To run the code on a **local environment**, they will have to clone this repository along with its contents in the `app.py` [folder](https://github.com/EugeneHsiung/flask_e2e_project/tree/main/app). The individual will then have to `cd` into the directory and `cd` into the app then run the application with `python app.py`.
