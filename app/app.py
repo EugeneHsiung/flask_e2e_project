@@ -8,7 +8,6 @@ from sqlalchemy import create_engine, text
 from authlib.integrations.flask_client import OAuth
 from authlib.common.security import generate_token
 import csv
-from flask import Flask, url_for
 from flask import Flask
 from db_functions import update_or_create_user
 from flask import Flask, jsonify
@@ -29,33 +28,30 @@ sentry_sdk.init(
 
 app = Flask(__name__)
 
+# Load environment variables from .env file
+load_dotenv()
+
+
+# Database connection settings
 DB_HOST = os.getenv("DB_HOST")
 DB_DATABASE = os.getenv("DB_DATABASE")
 DB_USERNAME = os.getenv("DB_USERNAME")
 DB_PASSWORD = os.getenv("DB_PASSWORD")
 DB_NAME = os.getenv("DB_NAME")
 
-
-load_dotenv()  # Load environment variables from .env file
-
-# Connection string
-connect_args={'ssl':{'fake_flag_to_enable_tls': True}}
-
-conn_string = (
-    f"mysql+pymysql://{DB_USERNAME}:{DB_PASSWORD}@{DB_HOST}/{DB_DATABASE}")
-
-# Database connection settings
+connect_args={'ssl':{'fake_flag_to_enable_tls': True}} # Connection string
+conn_string = f"mysql+pymysql://{DB_USERNAME}:{DB_PASSWORD}@{DB_HOST}/{DB_DATABASE}"
 db_engine = create_engine(conn_string, pool_pre_ping=True)
 
 
-## Connection settings for the Goolge OAuth
+# Google OAuth settings
 GOOGLE_CLIENT_ID = os.getenv('GOOGLE_CLIENT_ID')
 GOOGLE_CLIENT_SECRET = os.getenv('GOOGLE_CLIENT_SECRET')
 
-app = Flask(__name__)
 app.secret_key = os.urandom(12)
 oauth = OAuth(app)
 
+# Routes
 @app.route('/')
 def mainpage():
     return render_template('home.html')
@@ -64,8 +60,7 @@ def mainpage():
 def aboutpage():
     return render_template('about.html')
 
-
-df = pd.read_csv('/home/eugenehsiung/flask_e2e_project/data/Clean-Pregnancy-Associated_Mortality.csv')
+#df = pd.read_csv('/home/eugenehsiung/flask_e2e_project/data/Clean-Pregnancy-Associated_Mortality.csv')
 @app.route('/data')
 def data():
     # sample of 50
@@ -93,6 +88,21 @@ def hello_post():
     return jsonify({'message': f'Hello {name}!'})
 
 
+# @app.route('/hello', methods=['GET', 'POST']) (same example as above but combined using elif)
+#def hello():
+#    if request.method == 'GET':
+#        name = request.args.get('name', 'World')
+#        lastname = request.args.get('lastname', 'no last name provided')
+#        return f'Hello {name.upper()} {lastname.upper()}, <br> Welcome to my pregnancy associated mortality web app!'
+#    elif request.method == 'POST':
+#        data = request.get_json()
+#        if data is None:
+#            return jsonify({'error': 'Invalid JSON'}), 400
+#        name = data.get('name', 'World')
+#        return jsonify({'message': f'Hello {name}!'})
+
+
+
 # Google OAuth
 @app.route('/google/')
 def google():
@@ -106,7 +116,6 @@ def google():
             'scope': 'openid email profile'
         }
     )
-
     # Redirect to google_auth function
     ###note, if running locally on a non-google shell, do not need to override redirect_uri
     ### and can just use url_for as below
@@ -140,11 +149,6 @@ def logout():
     session.pop('user', None)
     return redirect('/')
 
-
 if __name__ == '__main__':
     app.run(debug=True)
-
-
-
-
 
