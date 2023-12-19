@@ -67,7 +67,7 @@ def data():
     df = pd.read_csv('/home/eugenehsiung/flask_e2e_project/data/Clean-Pregnancy-Associated_Mortality.csv').sample(50)
     return render_template('data.html', data=df)
 
-# GET and POST
+# GET and POST 
 @app.route('/hello', methods=['GET'])
 def hello_get():
     name = request.args.get('name', 'World')
