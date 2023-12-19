@@ -1,7 +1,7 @@
-import os
+from sqlalchemy import create_engine, inspect
 from dotenv import load_dotenv
 from pandas import read_sql
-from sqlalchemy import create_engine, inspect
+import os
 import pandas as pd
   
 # Database connection settings from environment variables
@@ -13,10 +13,7 @@ DB_PASSWORD = os.getenv("DB_PASSWORD")
 load_dotenv()
 
 # Connection string
-conn_string = (
-    f"mysql+pymysql://{DB_USERNAME}:{DB_PASSWORD}@{DB_HOST}/{DB_DATABASE}")
-
-# Create a database engine
+conn_string = (f"mysql+pymysql://{DB_USERNAME}:{DB_PASSWORD}@{DB_HOST}/{DB_DATABASE}")
 db_engine = create_engine(conn_string, echo=False)
 
 df = pd.read_csv('/home/eugenehsiung/flask_e2e_project/data/Clean-Pregnancy-Associated_Mortality.csv')
